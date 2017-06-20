@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	
+<struts>
+		<!-- package 包名  区分不同模块， 名称唯一    可以继承父类 package，包含多个控制器Action -->
+	<package name="default"  extends="struts-default">
+		<action name="login1"  class="com.hxd.struts2.login.LoginAction">
+				<result name="success" >/login/success.jsp</result>
+				<result name="error" >/login/error.jsp</result>
+		</action>
+<!-- 		<action name="login2"  class="com.hxd.struts2.login.LoginAction2">
+				<result name="success" >/login/success.jsp</result>
+				<result name="error" >/login/error.jsp</result>
+		</action>
+		<action name="login3"  class="com.hxd.struts2.login.LoginAction3">
+				<result name="success" >/login/success.jsp</result>
+				<result name="error" >/login/error.jsp</result>
+		</action>
+	 -->
+	
+	</package>
+	
+</struts>
