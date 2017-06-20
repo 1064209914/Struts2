@@ -22,6 +22,11 @@
 				<action name="webAware" class="com.hxd.struts.webziyuan.WebAware">
 				<result >/webresult.jsp </result>
 				</action>
+				<action name="exception" class="com.hxd.struts.exception.ExceptionOne" >
+					<exception-mapping result="success" exception="出错了"></exception-mapping>
+					
+					<result name="success" >/exception.jsp</result>
+				</action>
 		</package>
 			
 </struts>
